@@ -23,12 +23,12 @@ const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
             onClick={handleTicketClick}
             className="p-4 bg-white rounded-lg space-y-2 hover:scale-105 transition-transform duration-300"
         >
-            <div className="flex justify-between items-center">
+            <div className="flex gap-x-2 justify-between items-center">
                 <h4 className="text-xl font-semibold" title={title}>
                     {title.length > 30 ? title.slice(0, 28) + "..." : title}
                 </h4>
                 <span
-                    className={`flex items-center gap-x-1 px-2 py-1 text-sm rounded-full font-semibold ${currentStatus === "Open" ? "bg-green-200 text-green-800" : "bg-amber-100 text-amber-600"}`}
+                    className={`flex items-center gap-x-1 px-2 py-1 text-sm rounded-full font-semibold whitespace-nowrap ${currentStatus === "Open" ? "bg-green-200 text-green-800" : "bg-amber-100 text-amber-600"}`}
                 >
                     <BsCircleFill /> {currentStatus}
                 </span>
@@ -38,7 +38,7 @@ const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
                     ? description.slice(0, 95) + "..."
                     : description}
             </p>
-            <div className="flex justify-between items-center text-center text-sm">
+            <div className="flex flex-col lg:flex-row gap-y-1 lg:gap-y-0 justify-between items-center text-center text-sm">
                 <div className="flex items-center gap-x-2 font-semibold">
                     <span className="text-slate-600">#{id}</span>
                     <span

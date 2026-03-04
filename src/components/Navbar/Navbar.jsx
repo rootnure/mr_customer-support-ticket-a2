@@ -33,9 +33,9 @@ const Navbar = () => {
         <div className="bg-base-100 shadow-sm">
             <div className="navbar max-w-7xl mx-auto">
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-lg lg:text-2xl font-bold px-0">
+                    <h3 className="text-lg lg:text-2xl font-bold px-0">
                         CS — Ticket System
-                    </a>
+                    </h3>
                 </div>
                 <div className="flex-none">
                     <ul className="menu hidden lg:flex menu-horizontal px-1 font-semibold items-center">

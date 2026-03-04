@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import MainContainer from "../../components/MainContainer/MainContainer";
 import { Bounce, ToastContainer } from "react-toastify";
+import Footer from "../../components/Footer/Footer";
 
 const Main = ({ ticketResponse }) => {
     return (
@@ -27,6 +28,7 @@ const Main = ({ ticketResponse }) => {
             />
 
             {/* footer */}
+            <Footer></Footer>
         </div>
     );
 };
