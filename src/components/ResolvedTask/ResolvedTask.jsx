@@ -1,5 +1,5 @@
-import React from "react";
 import ContainerTitle from "../Shared/ContainerTitle";
+import NoDataPlaceholder from "../Shared/NoDataPlaceholder";
 import ResolvedTickets from "./ResolvedTickets";
 
 const ResolvedTask = ({ resolvedTickets }) => {
@@ -8,9 +8,7 @@ const ResolvedTask = ({ resolvedTickets }) => {
             <ContainerTitle title="Resolved Task"></ContainerTitle>
             <div className="mt-4 space-y-2">
                 {!resolvedTickets.length ? (
-                    <p className="text-sm text-slate-500 mt-2">
-                        No resolved tasks yet.
-                    </p>
+                    <NoDataPlaceholder msg="No resolved tasks yet" />
                 ) : (
                     resolvedTickets.map((tkt) => (
                         <ResolvedTickets

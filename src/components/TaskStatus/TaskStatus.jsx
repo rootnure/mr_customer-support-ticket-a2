@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerTitle from "../Shared/ContainerTitle";
 import ProcessingTicket from "./ProcessingTicket";
+import NoDataPlaceholder from "../Shared/NoDataPlaceholder";
 
 const TaskStatus = ({ processingTickets, handleResolve }) => {
     return (
@@ -8,9 +9,7 @@ const TaskStatus = ({ processingTickets, handleResolve }) => {
             <ContainerTitle title="Task Status"></ContainerTitle>
             <div className="mt-4 space-y-3">
                 {!processingTickets.length ? (
-                    <p className="text-sm mt-2 text-slate-500">
-                        Select a ticket to add to Task Status
-                    </p>
+                    <NoDataPlaceholder msg="Select a ticket to add to Task Status" />
                 ) : (
                     processingTickets.map((tkt) => (
                         <ProcessingTicket

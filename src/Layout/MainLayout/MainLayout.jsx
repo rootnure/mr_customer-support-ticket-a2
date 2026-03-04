@@ -13,7 +13,7 @@ const Main = ({ ticketResponse }) => {
 
             {/* react toastify container */}
             <ToastContainer
-                position="top-right"
+                position="top-center"
                 autoClose={2500}
                 hideProgressBar={false}
                 newestOnTop={true}

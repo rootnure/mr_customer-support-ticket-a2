@@ -16,7 +16,8 @@ const MainContainer = ({ ticketResponse }) => {
         if (currResolvedTkt) {
             // success notificaiton
             toast.success(
-                `${currResolvedTkt.title ?? "Ticket"} Has Being Resolved`,
+                `"${currResolvedTkt.title ?? "Ticket"}" Has Being Resolved`,
+                { autoClose: 4000 },
             );
             // add to resolved list
             setResolvedTickets([...resolvedTickets, currResolvedTkt]);
