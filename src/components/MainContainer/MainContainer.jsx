@@ -36,7 +36,7 @@ const MainContainer = ({ ticketResponse }) => {
         setProcessingTickets([...remainingProcessingTickets]);
     };
     return (
-        <div className="max-w-7xl mx-auto py-16">
+        <div className="max-w-7xl mx-auto py-4 lg:py-16 px-2 lg:px-0">
             {/* counter */}
             <Counter
                 processingTickets={processingTickets}
@@ -44,9 +44,9 @@ const MainContainer = ({ ticketResponse }) => {
             ></Counter>
 
             {/* customer ticket & sidebar */}
-            <div className="pt-12 grid grid-cols-1 lg:grid-cols-4 gap-x-6">
+            <div className="pt-6 lg:pt-12 grid grid-cols-1 lg:grid-cols-4 gap-x-6">
                 {/* customer tickets */}
-                <div className="col-span-3 order-2 lg:order-1">
+                <div className="col-span-3 order-2 lg:order-1 pt-6 lg:pt-0">
                     <CustomerTickets
                         activeTickets={activeTickets}
                         processingTickets={processingTickets}
@@ -55,7 +55,7 @@ const MainContainer = ({ ticketResponse }) => {
                 </div>
 
                 {/* sidebar */}
-                <div className="order-1 lg:order-2">
+                <div className="col-span-3 lg:col-span-1 order-1 lg:order-2">
                     <Sidebar
                         handleResolve={handleResolve}
                         resolvedTickets={resolvedTickets}

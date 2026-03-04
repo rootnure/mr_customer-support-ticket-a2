@@ -22,23 +22,27 @@ const Navbar = () => {
             </li>
         </>
     );
+    const newTktBtn = (
+        <button className="text-white bg-linear-to-r from-purple-800 to-purple-600 btn flex items-center">
+            <FaPlus />
+            New Ticket
+        </button>
+    );
 
     return (
         <div className="bg-base-100 shadow-sm">
             <div className="navbar max-w-7xl mx-auto">
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-2xl font-bold px-0">
+                    <a className="btn btn-ghost text-lg lg:text-2xl font-bold px-0">
                         CS — Ticket System
                     </a>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1 font-semibold items-center">
+                    <ul className="menu hidden lg:flex menu-horizontal px-1 font-semibold items-center">
                         {navItems}
-                        <button className="text-white bg-linear-to-r from-purple-800 to-purple-600 btn flex items-center">
-                            <FaPlus />
-                            New Ticket
-                        </button>
+                        {newTktBtn}
                     </ul>
+                    {newTktBtn}
                 </div>
             </div>
         </div>

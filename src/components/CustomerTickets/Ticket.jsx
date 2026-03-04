@@ -47,12 +47,12 @@ const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
                         {priority} Priority
                     </span>
                 </div>
-                <div className="flex gap-x-3 text-slate-700">
-                    <span>{customer}</span>
+                <div className="flex gap-x-1 lg:gap-x-3 text-slate-700">
+                    <span className="whitespace-nowrap">{customer}</span>
                     <span className="flex items-center">
                         <span className="text-lg">
                             <CiCalendarDate />
-                        </span>{" "}
+                        </span>
                         {createdAt}
                     </span>
                 </div>

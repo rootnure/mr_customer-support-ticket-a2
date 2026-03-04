@@ -2,7 +2,7 @@ import Count from "./Count";
 
 const Counter = ({ processingTickets, resolvedTickets }) => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-4">
+        <div className="grid grid-cols-2 gap-2 lg:gap-4">
             {/* In progress */}
             <Count
                 title="In-Progress"

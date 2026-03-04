@@ -10,9 +10,9 @@ const CustomerTickets = ({
     return (
         <>
             <ContainerTitle title="Customer Tickets"></ContainerTitle>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-x-6 lg:gap-y-4 mt-1 lg:mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-x-6 lg:gap-y-4 mt-1 lg:mt-4">
                 {!activeTickets.length ? (
-                    <NoDataPlaceholder msg="No Active Tickets" />
+                    <NoDataPlaceholder msg="No Active Tickets Found" />
                 ) : (
                     activeTickets.map((ticket) => (
                         <Ticket
