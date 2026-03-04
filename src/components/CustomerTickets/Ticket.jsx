@@ -1,7 +1,7 @@
 import { CiCalendarDate } from "react-icons/ci";
 import { BsCircleFill } from "react-icons/bs";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 const Ticket = ({ ticket }) => {
     const { title, status, description, id, priority, customer, createdAt } =
@@ -32,6 +32,7 @@ const Ticket = ({ ticket }) => {
                 draggable
                 pauseOnHover
                 theme="light"
+                transition={Bounce}
             />
             <div className="flex justify-between items-center">
                 <h4 className="text-xl font-semibold" title={title}>
