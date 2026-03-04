@@ -1,0 +1,105 @@
+{
+    "isSuccess": true,
+    "message": "customer support ticket data receive successfully",
+    "data": [
+        {
+            "id": 1,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 2,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 3,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 4,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 5,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 6,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 7,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 8,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 9,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 10,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        },
+        {
+            "id": 11,
+            "title": "Login Issues - Can't Access Account",
+            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+            "customer": "John Smith",
+            "priority": "High",
+            "status": "Open",
+            "createdAt": "1/15/2024"
+        }
+    ]
+}
