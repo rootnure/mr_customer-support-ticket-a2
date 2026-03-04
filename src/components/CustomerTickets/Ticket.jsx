@@ -1,7 +1,7 @@
 import { CiCalendarDate } from "react-icons/ci";
 import { BsCircleFill } from "react-icons/bs";
 import { useState } from "react";
-import { Bounce, toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Ticket = ({ ticket }) => {
     const { title, status, description, id, priority, customer, createdAt } =
@@ -11,45 +11,32 @@ const Ticket = ({ ticket }) => {
     const handleTicketClick = () => {
         if (currentStatus === "Open") {
             setCurrentStatus("In-Progress");
-            toast.success("Added To In Progress");
+            toast.info(`"${title}" Submitted for Processing`);
         } else {
-            toast.warn("Already Processing");
+            toast.warn("Ticket Already in Processing");
         }
     };
     return (
         <div
             onClick={handleTicketClick}
-            className="p-4 bg-white rounded-lg space-y-2"
+            className="p-4 bg-white rounded-lg space-y-2 hover:scale-105 transition-transform duration-300"
         >
-            <ToastContainer
-                position="top-right"
-                autoClose={2500}
-                hideProgressBar={false}
-                newestOnTop={true}
-                closeOnClick={true}
-                rtl={false}
-                pauseOnFocusLoss={false}
-                draggable
-                pauseOnHover
-                theme="light"
-                transition={Bounce}
-            />
             <div className="flex justify-between items-center">
                 <h4 className="text-xl font-semibold" title={title}>
-                    {title.length > 30 ? title.slice(0, 25) + "..." : title}
+                    {title.length > 30 ? title.slice(0, 28) + "..." : title}
                 </h4>
                 <span
-                    className={`flex items-center gap-x-1 px-2 py-1 text-sm rounded-full ${currentStatus === "Open" ? "bg-green-200 text-green-600" : "bg-amber-100 text-amber-600"}`}
+                    className={`flex items-center gap-x-1 px-2 py-1 text-sm rounded-full font-semibold ${currentStatus === "Open" ? "bg-green-200 text-green-800" : "bg-amber-100 text-amber-600"}`}
                 >
                     <BsCircleFill /> {currentStatus}
                 </span>
             </div>
-            <p className="text-lg text-justify">
+            <p className="text-base text-justify">
                 {description.length > 100
                     ? description.slice(0, 95) + "..."
                     : description}
             </p>
-            <div className="flex justify-between text-sm items-center">
+            <div className="flex justify-between items-center text-sm">
                 <div className="flex gap-x-2 font-semibold">
                     <span className="text-slate-600">#{id}</span>
                     <span

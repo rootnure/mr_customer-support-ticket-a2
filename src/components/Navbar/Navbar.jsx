@@ -1,3 +1,4 @@
+import { FaPlus } from "react-icons/fa6";
 const Navbar = () => {
     const navItems = (
         <>
@@ -27,14 +28,14 @@ const Navbar = () => {
             <div className="navbar max-w-7xl mx-auto">
                 <div className="flex-1">
                     <a className="btn btn-ghost text-2xl font-bold px-0">
-                        CS -- Ticket System{" "}
+                        CS — Ticket System
                     </a>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 font-semibold items-center">
                         {navItems}
-                        <button className="text-white bg-linear-to-r from-purple-600 to-purple-800 btn flex items-center">
-                            <span className="font-extrabold text-xl">+</span>{" "}
+                        <button className="text-white bg-linear-to-r from-purple-800 to-purple-600 btn flex items-center">
+                            <FaPlus />
                             New Ticket
                         </button>
                     </ul>

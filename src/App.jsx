@@ -1,7 +1,7 @@
 import "./App.css";
 import Main from "./Layout/MainLayout/MainLayout";
 
-const ticketResponse = fetch("/public/ticket.json").then((res) => res.json());
+const ticketResponse = fetch("/ticket.json").then((res) => res.json());
 
 function App() {
     return (
