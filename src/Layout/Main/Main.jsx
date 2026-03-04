@@ -1,11 +1,19 @@
 import React, { use } from 'react';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Main = ({ticketResponse}) => {
-    const csTickets = use(ticketResponse);
+    const {data: csTickets} = use(ticketResponse);
     console.log(csTickets);
     return (
         <div>
-            <h1>Main Layout</h1>
+            {/* navbar */}
+            <Navbar></Navbar>
+
+            {/* counter */}
+
+            {/* tickets & sidebar */}
+
+            {/* footer */}
         </div>
     );
 };

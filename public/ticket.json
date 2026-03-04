@@ -3,7 +3,7 @@
     "message": "customer support ticket data receive successfully",
     "data": [
         {
-            "id": 1,
+            "id": 1001,
             "title": "Login Issues - Can't Access Account",
             "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
             "customer": "John Smith",
@@ -12,94 +12,113 @@
             "createdAt": "1/15/2024"
         },
         {
-            "id": 2,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1002,
+            "title": "Payment Failed - Card Declined",
+            "description": "Customer attemped to pay using Visa ending 1324 but the payment keeps failing despite sufficient balance.",
+            "customer": "Sarah Johnson",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/16/2024"
         },
         {
-            "id": 3,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
-            "priority": "High",
+            "id": 1003,
+            "title": "Unable to Download Invoice",
+            "description": "Customer cannot downlaod their January invoice fromt he billing section. The download button is enable but it is not doing anything.",
+            "customer": "Michael Brown",
+            "priority": "Medium",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/17/2024"
         },
         {
-            "id": 4,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1004,
+            "title": "Website Loading Slowly",
+            "description": "Customer experiences very slow loading times when browsing product pages.",
+            "customer": "Daniel Clark",
+            "priority": "Low",
+            "status": "Open",
+            "createdAt": "2/10/2024"
+        },
+
+        {
+            "id": 1005,
+            "title": "Payment Failure",
+            "description": "Customer reports that their credit card payment keeps failing during checkout despite having sufficient balance.",
+            "customer": "Emma Johnson",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/18/2024"
         },
         {
-            "id": 5,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
-            "priority": "High",
+            "id": 1006,
+            "title": "Delayed Order Delivery",
+            "description": "Customer has not received their order even after the estimated delivery date has passed.",
+            "customer": "Michael Brown",
+            "priority": "Medium",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/20/2024"
         },
         {
-            "id": 6,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1007,
+            "title": "Account Suspension Issue",
+            "description": "Customer's account was suspended without notification and they are requesting clarification.",
+            "customer": "Sophia Davis",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/22/2024"
         },
         {
-            "id": 7,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
-            "priority": "High",
+            "id": 1008,
+            "title": "Refund Not Processed",
+            "description": "Customer returned a product two weeks ago but has not yet received their refund.",
+            "customer": "James Wilson",
+            "priority": "Medium",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/25/2024"
         },
         {
-            "id": 8,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1009,
+            "title": "App Crashing on Launch",
+            "description": "Customer reports that the mobile app crashes immediately after opening it on Android device.",
+            "customer": "Olivia Martinez",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "1/28/2024"
         },
         {
-            "id": 9,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1010,
+            "title": "Incorrect Billing Amount",
+            "description": "Customer was charged twice for the same subscription renewal.",
+            "customer": "William Anderson",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "2/01/2024"
         },
         {
-            "id": 10,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
-            "priority": "High",
+            "id": 1011,
+            "title": "Unable to Update Profile",
+            "description": "Customer cannot update their email address in account settings due to a validation error.",
+            "customer": "Ava Thomas",
+            "priority": "Low",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "2/03/2024"
         },
         {
-            "id": 11,
-            "title": "Login Issues - Can't Access Account",
-            "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
-            "customer": "John Smith",
+            "id": 1012,
+            "title": "Missing Order Items",
+            "description": "Customer received their package but some items were missing from the box.",
+            "customer": "Benjamin Taylor",
+            "priority": "Medium",
+            "status": "Open",
+            "createdAt": "2/05/2024"
+        },
+        {
+            "id": 1013,
+            "title": "Password Reset Email Not Received",
+            "description": "Customer requested a password reset but did not receive any email in inbox or spam folder.",
+            "customer": "Mia Harris",
             "priority": "High",
             "status": "Open",
-            "createdAt": "1/15/2024"
+            "createdAt": "2/07/2024"
         }
     ]
 }
