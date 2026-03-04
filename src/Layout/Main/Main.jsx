@@ -1,17 +1,17 @@
-import React, { use } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
+import React, { use } from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import MainContainer from "../../components/MainContainer/MainContainer";
 
-const Main = ({ticketResponse}) => {
-    const {data: csTickets} = use(ticketResponse);
+const Main = ({ ticketResponse }) => {
+    const { data: csTickets } = use(ticketResponse);
     console.log(csTickets);
     return (
         <div>
             {/* navbar */}
             <Navbar></Navbar>
 
-            {/* counter */}
-
-            {/* tickets & sidebar */}
+            {/* counter, tickets & sidebar container */}
+            <MainContainer></MainContainer>
 
             {/* footer */}
         </div>
