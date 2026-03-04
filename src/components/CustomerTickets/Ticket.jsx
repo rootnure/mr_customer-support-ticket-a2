@@ -3,7 +3,7 @@ import { BsCircleFill } from "react-icons/bs";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const Ticket = ({ ticket }) => {
+const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
     const { title, status, description, id, priority, customer, createdAt } =
         ticket || {};
     const [currentStatus, setCurrentStatus] = useState(status);
@@ -12,6 +12,8 @@ const Ticket = ({ ticket }) => {
         if (currentStatus === "Open") {
             setCurrentStatus("In-Progress");
             toast.info(`"${title}" Submitted for Processing`);
+            const currentTicket = { id: id, title: title };
+            setProcessingTickets([...processingTickets, currentTicket]);
         } else {
             toast.warn("Ticket Already in Processing");
         }

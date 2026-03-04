@@ -1,11 +1,14 @@
-import ResolvedTask from "./ResolvedTask";
-import TaskStatus from "./TaskStatus";
+import ResolvedTask from "../ResolvedTask/ResolvedTask";
+import TaskStatus from "../TaskStatus/TaskStatus";
 
-const Sidebar = () => {
+const Sidebar = ({ processingTickets, handleResolve, resolvedTickets }) => {
     return (
         <div className="space-y-6">
-            <TaskStatus></TaskStatus>
-            <ResolvedTask></ResolvedTask>
+            <TaskStatus
+                processingTickets={processingTickets}
+                handleResolve={handleResolve}
+            ></TaskStatus>
+            <ResolvedTask resolvedTickets={resolvedTickets}></ResolvedTask>
         </div>
     );
 };
