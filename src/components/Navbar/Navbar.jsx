@@ -42,7 +42,7 @@ const Navbar = () => {
                         {navItems}
                         {newTktBtn}
                     </ul>
-                    {newTktBtn}
+                    <span className="lg:hidden">{newTktBtn}</span>
                 </div>
             </div>
         </div>

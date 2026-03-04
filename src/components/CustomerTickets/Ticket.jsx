@@ -38,8 +38,8 @@ const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
                     ? description.slice(0, 95) + "..."
                     : description}
             </p>
-            <div className="flex justify-between items-center text-sm">
-                <div className="flex gap-x-2 font-semibold">
+            <div className="flex justify-between items-center text-center text-sm">
+                <div className="flex items-center gap-x-2 font-semibold">
                     <span className="text-slate-600">#{id}</span>
                     <span
                         className={`uppercase ${priority === "High" ? "text-red-500" : priority === "Medium" ? "text-yellow-500" : "text-green-600"}`}
@@ -47,7 +47,7 @@ const Ticket = ({ ticket, processingTickets, setProcessingTickets }) => {
                         {priority} Priority
                     </span>
                 </div>
-                <div className="flex gap-x-1 lg:gap-x-3 text-slate-700">
+                <div className="flex items-center gap-x-1 lg:gap-x-3 text-slate-700">
                     <span className="whitespace-nowrap">{customer}</span>
                     <span className="flex items-center">
                         <span className="text-lg">
