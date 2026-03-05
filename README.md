@@ -1,16 +1,21 @@
-# React + Vite
+# QnA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is JSX, and why is it used?
 
-Currently, two official plugins are available:
+- JSX is JavaScript XML or HTML like code written in JavaScript file. To write HTML like code inside a React Component JSX syntax is used.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What is the difference between State and Props?
 
-## React Compiler
+- State is current value in side a React component that tells the code if needed to re-render or not and Props is value that been passed from parent to child component in React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What is the useState hook, and how does it work?
 
-## Expanding the ESLint configuration
+- useState hook is used to store and update a state value of a variable. It returns an array with a variable to store value and a function to update the value as directly updating the value will not re-render in virtual DOM in react also a default value can be provide while declaring the state.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How can you share state between components in React?
+
+- By performing props drilling, a state can be shared from the parent component to one or multiple children component.
+
+## How is event handling done in React?
+
+- By directly attaching an event handler function to desire position (button, form, element etc.) in JSX, event handling is done in React. In that case, only the function reference is provided in the position. i.e. `<button onClick={handleClick}>Click Me</button>`
